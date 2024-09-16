@@ -86,7 +86,7 @@
         font-family: Lato;
         line-height: 2.5rem;
     }
-    .Homemain button{
+    button{
         height: 50px;
         width: 175px;
         border-radius:40px;
@@ -94,9 +94,67 @@
         background-color: orange;
     }
     #About{
-        padding: 4rem;
+        padding: 6rem;
+        height: 80svh;
+        display: flex;   
+        justify-content: center;
+        align-items: center;
+        background: url('./images/Place\ Image.png');
+        background-size: cover;
+    }
+    #About blockquote{
+        width: 60%;
+        line-height: 44px;
+        font-size: 24px;
+        margin-top: 2rem;
+    }
+    #About p{
+        width: 50%;
+        font-weight: 900;
+    }
+    .aboutimg{
+        
+        height: 100%;
+        background-color: red;
+    }
+
+    #Team{
+        background: url("images/Service.png");
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.837);
         display: flex;
         justify-content: space-around;
+    }
+
+
+
+    #Services{
+        height: 90svh;
+        padding: 2rem;
+        display: flex;
+    }
+    .Servicecard{
+        
+        background-color: red;
+
+    }
+    .Servicecard1{
+        height: 80svh;
+        width: 25%;
+        border-radius: 5px;
+        margin-right: 5rem;
+        background: url("images/Layer\ 20.png");
+        background-color: rgba(0, 0, 0, 0.79);
+        background-size:cover;
+    }
+    .Servicecard2{
+        height: 80svh;
+        width: 25%;
+        border-radius: 5px;
+        margin-right: 5rem;
+        background: url("images/Layer\ 21.png");
+        background-color: rgba(0, 0, 0, 0.797);
+        background-size:cover;
     }
 </style>
 <body>
@@ -119,27 +177,92 @@
     <section id="Home">
         <div class="Homemain">
             <img src="./images/Creative.png">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dolorem deserunt iusto cupiditate, aperiam dignissimos porro perferendis libero
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <button>Read More</button>
         </div>
+
     </section>
     <section id="About">
-        <div>
             <div>
-                <h1 style="color: black; font-size:56px">Welcome</h1>
-                <h2 style="color: orange; font-size:56px">for Professional</h2>
+                <h1 style="color: black; font-size:56px; align-items: left;">Welcome</h1>
+                <h2 style="color: orange; font-size:56px; align-items: left;">for Professional</h2>
+                <blockquote style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quo, reprehenderit ipsum voluptatum.</blockquote>
+                <p style="color: black; margin-top:3svh ;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus fugit facere, nostrum cupiditate aliquid tempora qui? Ipsum soluta dolor quasi expedita illum nemo animi ullam accusantium optio, vero mollitia pariatur?</p>
+                <button style="margin-top: 3rem;">Read More</button>
             </div>
-            <img src="/images/Rectangle 3.png">
+        <div class="aboutimg" style="height: auto; width: auto;"></div>
+    </section>
+    <section id="Team">
+        <div style="margin:auto 0 auto 0; width: 40%;">
+            <img src="./images/Our Company great Services..png">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, excepturi repellendus, libero quam quod suscipit </p>
+        </div>
+        <div style="margin:auto 0 auto 0; width: 40%;">
+            <div style="display: flex; justify-content: space-evenly; margin-bottom: 2rem;">
+                <img src="./images/Icon_Flag.png" alt="image" height="50px" width="50px">
+                <div>
+                    <h1 style="color: orange;"> Creative Work</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Q</p>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-evenly; margin-bottom: 2rem;">
+                <img src="./images/Icon_Monitor.png" alt="image" height="50px" width="50px">
+                <div>
+                    <h1 style="color: orange;"> Creative Work</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Q</p>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-evenly; margin-bottom: 2rem;">
+                <img src="./images/Vector Smart Object.png" alt="image" height="50px" width="50px">
+                <div>
+                    <h1 style="color: orange;"> Creative Work</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Q</p>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-evenly; margin-bottom: 2rem;">
+                <img src="./images/Icon_Customer.png" alt="image" height="50px" width="50px">
+                <div>
+                    <h1 style="color: orange;"> Creative Work</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Q</p>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="Team"></section>
-    <section id="Services"></section>
+    <section id="Services">
+        <div class="Servicecard1" style="display: flex; flex-direction: column-reverse;">
+            <div style="height: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+                <img src="./images/Icon_Flag.png" alt="">
+                <h1 style="color: orange;">Creative</h1>
+                <p style="margin:0 auto 0 auto;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, totam voluptates in impedit  </p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="Servicecard2" style="display: flex; flex-direction: column-reverse;">
+                <div style="height: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    
+                    <img src="./images/Icon_Customer.png" alt="">
+                    <h1 style="color: orange;">Creative</h1>
+                    <p style="margin:0 auto 0 auto;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, totam voluptates in impedit  </p>
+                    <button>Read More</button>
+                </div>
+        </div>
+        <div style="width: 40%;">
+            <h1 style="color: black; font-size:56px; align-items: right;">Welcome</h1>
+            <h2 style="color: orange; font-size:30px; align-items: right; margin-bottom: 4rem;">for Professional</h2>
+            <p style="color: black; font-weight: 800; width: 40%; font-size: 20px; margin-bottom: 2rem;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa necessitatibus alias exercitationem odio animi enim aliquid error </p>
+            <ul>
+                <li style="color: black;" style="margin-bottom: 1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li style="color: black;" style="margin-bottom: 1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li style="color: black;" style="margin-bottom: 1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li style="color: black;" style="margin-bottom: 1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+        </div>
+    </section>
     <section id="Process"></section>
-    <section id="Clients"></section>
-    <section id="Work"></section>
-    <section id="Footer"></section>
+    <!-- <section id="Clients"></section> -->
+    <!-- <section id="Work"></section> -->
+    <!-- <section id="Footer"></section> -->
 
     
 </body>
