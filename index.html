@@ -12,15 +12,16 @@
     *{
         margin: 0;
         padding: 0;
+        color: #fff;
+        font-family: Lato;
+        
     }
-    body{
-        background-color: black;
-    }
+    
     header{
         display: flex;
         justify-content: center;
         align-items: center;
-        color: transparent;
+        background-color: black;
         /* position: absolute;
         top: 0px;
         left: 0px; */
@@ -38,6 +39,7 @@
         width: 95%;
         gap:35vw;
         padding: 1rem;
+
         border-bottom:1px solid gray;
     }
     .header ul{
@@ -62,6 +64,40 @@
         margin:auto 0 auto 0;
 
     }
+
+    /* adding the style to home section  */
+    #Home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90svh;
+        background-color: rgba(0, 0, 0, 0.395);
+        padding-left: 10rem;
+        background-image: url("images/Layer\ 19.png");
+        background-size: cover;
+    }
+    .Homemain{
+        background-image: "./";
+    }
+    
+    .Homemain p{
+        width: 40%;
+        font-size: 24px;
+        font-family: Lato;
+        line-height: 2.5rem;
+    }
+    .Homemain button{
+        height: 50px;
+        width: 175px;
+        border-radius:40px;
+        font-size: 24px;
+        background-color: orange;
+    }
+    #About{
+        padding: 4rem;
+        display: flex;
+        justify-content: space-around;
+    }
 </style>
 <body>
     <header>
@@ -80,8 +116,24 @@
             </ul>
         </div>
     </header>
-    <section id="Home"></section>
-    <section id="About"></section>
+    <section id="Home">
+        <div class="Homemain">
+            <img src="./images/Creative.png">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dolorem deserunt iusto cupiditate, aperiam dignissimos porro perferendis libero
+            </p>
+            <button>Read More</button>
+        </div>
+    </section>
+    <section id="About">
+        <div>
+            <div>
+                <h1 style="color: black; font-size:56px">Welcome</h1>
+                <h2 style="color: orange; font-size:56px">for Professional</h2>
+            </div>
+            <img src="/images/Rectangle 3.png">
+        </div>
+    </section>
     <section id="Team"></section>
     <section id="Services"></section>
     <section id="Process"></section>
